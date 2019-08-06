@@ -18,8 +18,12 @@ public class Porta implements Serializable {
 	private Long idPorta;
 	private String statusPorta;
 
+	public Porta() {
+		super();
+	}
+
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "id_porta")
 	public Long getIdPorta() {
 		return idPorta;

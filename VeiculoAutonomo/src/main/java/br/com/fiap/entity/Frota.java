@@ -42,7 +42,7 @@ public class Frota implements Serializable {
 
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "id_veiculo")
 	public Long getIdFrota() {
 		return idFrota;

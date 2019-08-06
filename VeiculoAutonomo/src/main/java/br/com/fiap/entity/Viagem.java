@@ -38,7 +38,7 @@ public class Viagem implements Serializable {
 	}
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "id_viagem")
 	public Long getIdViagem() {
 		return idViagem;

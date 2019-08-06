@@ -40,7 +40,7 @@ public class Pessoa implements Serializable {
 	}
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "id_pessoa")
 	public Long getIdPessoa() {
 		return idPessoa;
